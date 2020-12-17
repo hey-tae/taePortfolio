@@ -40,7 +40,17 @@ span {
 
   .about{
       background-color: #81B19E;
+      display: flex;
+      flex-direction: row;
   }
+
+.description{
+    font-family: 'Playfair Display', serif;
+    width: 50%;
+    margin-left: 25px;
+    padding: 10px;
+}
+
 
   a{
       color:#659E87;
