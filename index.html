@@ -12,10 +12,18 @@
 
 </head>
 <body>
-    
+
+    <!-- SIDE NAVIGATION WITH LINKS/ICONS -->
+
 <header>
     <div class="navbar--container sticky">
-        <div class="navbar--title"><h4>navigation</h4></div>
+        <div class="navbar--title">
+            <ul>
+                <li><a target="_blank" href="https://github.com/hey-tae" class="fab fa-github"></a></li>
+                <li><a target="_blank" href="https://twitter.com/_heytae_" class="fab fa-twitter"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/taewilson/" class="fab fa-linkedin"></a></li>
+            </ul>
+        </div>
         <!-- <div class="navbar--icon"><i class="fas fa-bars"></i></div> -->
       </div>
       <!-- <div class="nav--open close sticky">
@@ -32,46 +40,95 @@
 </header>
 
     
-    <!-- who i am  -->
-    <section>
+    <!-- INTRO - 'HEY IM TAE'  -->
+    <section class="mainIntro">
         <h1>Hey, I'm <span>Tae.</span> <br>I build stuff for the web</h1>
         
     </section>
 
+    <!-- ABOUT SECTION 2 SIDES ICON + ABOUT BLURB -->
     <section class="about">
-<div class="selfImage">
-    <img src="./wesbite about me(1).svg" alt="">
-</div>
+        <section class="selfImage">
+            <img src="./resizedmainavi.svg" alt="">
+        </section>
 
-        <div class="description">
-            <div><h3>About <span>Me.</span></h3></div>
-            I am a Software Engineer based in Boston, Ma. I am passionate about meeting user experience needs and solving problems through engineering. Having spent the last decade in customer experience, I can help you identify a blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah.
-            <br>
-            <br>
-            I am a Software Engineer based in Boston, Ma. I am passionate about meeting user experience needs and solving problems through engineering. Having spent the last decade in customer experience, I can help you identify a blah blah blah blah blah blah blah. 
-            <br>
+        <section class="aboutMeBlurb">
+            <h3 class="aboutMeTitle">About <span class="aboutMeTitle">Me.</span></h3>
+            <p class="description">
+                I am a Software Engineer based in Boston, Ma. I am passionate about meeting user experience needs and solving problems through engineering. Having spent the last decade in customer experience, I can help you identify a blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. blah blah blah blah blah blah blah. I am a Software Engineer based in Boston, Ma. I am passionate about meeting user experience needs and solving problems through engineering. Having spent the last decade in customer experience, I can help you identify a blah blah blah blah blah blah blah. 
+            </p>
            
-        </div>
-
+        </section>
+       
     </section>
+
+    <!-- PROJECTS -->
 
     <section class="myWork">
         <section class="workTitle"><h3>Some things I've built.</h3></section>
         <section class="projects">
-            <img src="https://placeimg.com/640/480/tech" alt="">
-            <img src="https://placeimg.com/640/480/tech" alt="">
-            <img src="https://placeimg.com/640/480/tech" alt="">
+            <section class="project1">
+                <section class="viewLinks">
+                    <section class="webIcon"> View Website</section>
+                    <section class="gitIcon">View on Github</section>
+                </section>
+            </section>
+            <section class="project2">
+                <section class="viewLinks">
+                    <section class="webIcon"> View Website</section>
+                    <section class="gitIcon">View on Github</section>
+                </section>
+            </section>
+            <section class="project3">
+                <section class="viewLinks">
+                    <section class="webIcon"> View Website</section>
+                    <section class="gitIcon">View on Github</section>
+                </section>
+            </section>
+            <section class="project4">
+                <section class="viewLinks">
+                    <section class="webIcon"> View Website</section>
+                    <section class="gitIcon">View on Github</section>
+                </section>
+            </section>
         </section>
 
         
     </section>
 
+<!-- CONTACT -->
+
+<section class="contactSection">
+
     <section class="workTogether">
-        <h1>lets <br>work<br><a class="underline" target="_blank" href="contact.html">together</a></h1>
+        <h1>lets <br>work<br><span class="togetherWord">together</span></h1>
     </section>
 
+    <section class="contactForm"> 
+        <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </section>
+   
 
+    
+</section>
 
+<section class="madeWithLove">
+    <span>Made with ♥  by Tae Wilson</span>
+ </section>     
+    
     <script src="/script.js"></script>
 </body>
 </html>

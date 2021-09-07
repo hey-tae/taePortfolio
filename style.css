@@ -8,6 +8,7 @@ body{
     margin: 0;
 }
 
+/* NAVIGATION */
 a {
     text-decoration: none;
     color: white;
@@ -44,6 +45,21 @@ a {
     margin-top: 35px;
     
   }
+
+ ul{
+   margin: 0;
+   padding: 0;
+ } 
+
+li{
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+a{
+  font-size: 2rem;
+}
+
 
   h4 {
     writing-mode: vertical-rl;
@@ -110,13 +126,13 @@ a {
     opacity: 0;
   }
 
-
+/* MAIN SECTION */
 
 section{
     font-family: 'Abril Fatface', cursive;
     color: #ffffff;
     
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -125,6 +141,18 @@ section{
     
 
    
+}
+
+.mainIntro{
+  font-family: 'Abril Fatface', cursive;
+    color: #ffffff;
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h1{
@@ -140,12 +168,12 @@ span {
     text-decoration: underline;
     color: #659E87;
   }
+  
 
-  img{
-      
-  }
+  /* ABOUT SECTION */
 
   .about{
+    width: 100%;
       background-color: #81B19E;
       display: flex;
       flex-direction: row;
@@ -153,7 +181,21 @@ span {
       align-items: center;
       justify-content: center;
   }
+  .selfImage{
+      width: 50%;
+  }
 
+.selfImage img{
+  width: 100%;
+}
+
+.aboutMeTitle {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+  .aboutMeBlurb{
+  width: 50%;
+}
 .description{
     font-family: 'Playfair Display', serif;
     width: 50%;
@@ -180,28 +222,43 @@ h3{
       color: #659E87;
   }
 
+
+  /* PROJECT SECTION */
   .myWork{
       background-color: #659E87;
+      width: 100%;
   }
 
-  .myWork > h3{
-      margin-top: 0px;
-  }
+  /* .myWork > h3{
+      margin-top: 15px;
+  } */
   
-  .projects{
+  /* .projects{
+      
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
       
-      width: 100%;
+  } */
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+  .project1, .project2, .project3, .project4{
+    border: 2px solid white;
+    width: 25%;
+    height: 50vh;
+    padding: 25px;
+    margin: 0 25px 25px 25px;
   }
 
-  .projects >img{
-      width: 25vw;
-      height: 80vh;
-      padding: 50px;
-  }
+.viewLinks{
+  margin-top: 75%;
+}
   /* .project1, .project2, .project3{
       display: flex;
       flex-direction: column;
@@ -209,7 +266,57 @@ h3{
       justify-content: center;
       border: 1px dashed orange;
       width: 25%; */
-  }
-  .workTogether{
+  
+
+  /* CONTACT SECTION */
+  .contactSection{
       background-color: #A6C9BB;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 50px 30px;
+  }
+
+  .workTogether{
+    width: 40%;
+    margin-left: 15%;
+    font-size: 1.2rem;
+    margin-top: 0;
+    /* display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .togetherWord{
+    text-decoration: none;
+    font-style: normal;
+  }
+
+
+.contactForm{
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+  form{
+    font-size: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  input, textarea{
+    font-size: 1.5rem;
+    margin-left: 15px;
+    
+  }
+
+  button{
+    font-size: 1.5rem;
+    width: 100%;
+    /* margin-left: 62.5%; */
+    color: white;
+    background-color: #92BFB1;
   }
